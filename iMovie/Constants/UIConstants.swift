@@ -19,7 +19,8 @@ class UIConstants{
         case Main = "Main"
     }
     
-//    enum Cell:String{
-//        
-//    }
+    enum Cell:String{
+        case MovieTableViewCell = "movieTVC"
+
+    }
 }
