@@ -14,7 +14,6 @@
 		B6FBB72F26D2184F008FA327 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FBB72D26D2184F008FA327 /* Main.storyboard */; };
 		B6FBB73126D21850008FA327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6FBB73026D21850008FA327 /* Assets.xcassets */; };
 		B6FBB73426D21850008FA327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6FBB73226D21850008FA327 /* LaunchScreen.storyboard */; };
-		B6FBB73F26D21850008FA327 /* iMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB73E26D21850008FA327 /* iMovieTests.swift */; };
 		B6FBB74A26D21851008FA327 /* iMovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB74926D21851008FA327 /* iMovieUITests.swift */; };
 		B6FBB75F26D21F13008FA327 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB75E26D21F13008FA327 /* UIHelper.swift */; };
 		B6FBB76226D21F39008FA327 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB76126D21F39008FA327 /* UIConstants.swift */; };
@@ -65,7 +64,6 @@
 		B6FBB73326D21850008FA327 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6FBB73526D21850008FA327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6FBB73A26D21850008FA327 /* iMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6FBB73E26D21850008FA327 /* iMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMovieTests.swift; sourceTree = "<group>"; };
 		B6FBB74026D21850008FA327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6FBB74526D21851008FA327 /* iMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FBB74926D21851008FA327 /* iMovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMovieUITests.swift; sourceTree = "<group>"; };
@@ -170,7 +168,6 @@
 		B6FBB73D26D21850008FA327 /* iMovieTests */ = {
 			isa = PBXGroup;
 			children = (
-				B6FBB73E26D21850008FA327 /* iMovieTests.swift */,
 				B6FBB74026D21850008FA327 /* Info.plist */,
 				B6FBB77C26D22BBD008FA327 /* WebServiceTests.swift */,
 			);
@@ -560,7 +557,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6FBB77D26D22BBD008FA327 /* WebServiceTests.swift in Sources */,
-				B6FBB73F26D21850008FA327 /* iMovieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
