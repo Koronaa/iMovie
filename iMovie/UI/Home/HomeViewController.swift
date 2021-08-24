@@ -24,12 +24,8 @@ class HomeViewController: UIViewController {
         setupUI()
         setupTableView()
         setupObservables()
-        getMovies()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         setupSkeleton()
+        getMovies()
     }
     
     private func setupUI(){
@@ -64,7 +60,7 @@ class HomeViewController: UIViewController {
     }
     
     private func setupSkeleton(){
-        let gradient = SkeletonGradient(baseColor: UIColor.red)
+        let gradient = SkeletonGradient(baseColor: UIColor.systemGray6)
         tableView.showAnimatedGradientSkeleton(usingGradient: gradient, animation: nil, transition: .crossDissolve(0.3))
         tableView.startSkeletonAnimation()
     }
@@ -90,6 +86,15 @@ extension HomeViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 296.0
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let movieInfo = homeVM.movies.value?[indexPath.row]{
+            let movieInfoVM = MovieInfoViewModel(movie: movieInfo)
+            let movieInfoVC = UIHelper.makeViewController(viewControllerName: .MovieInfoVC) as! MovieInfoViewController
+            movieInfoVC.movieInfoVM = movieInfoVM
+            self.navigationController?.pushViewController(movieInfoVC, animated: true)
+        }
     }
     
     //MARK: Skeleton View

@@ -16,6 +16,7 @@ struct MovieInfo: Codable {
     let title: String
     let openingCrawl, director, producer, releaseDate: String
     let characterEndpoints:[String]
+    let posterURL:URL = URL(string: "https://upload.wikimedia.org/wikipedia/commons/6/64/Poster_not_available.jpg")!
 
     enum CodingKeys: String, CodingKey {
         case title

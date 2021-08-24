@@ -12,6 +12,7 @@ class UIConstants{
     enum StoryBoardID:String{
         case HomeVC = "homeVC"
         case HomeNC = "homeNC"
+        case MovieInfoVC = "MovieInfoVC"
         
     }
     
@@ -21,6 +22,8 @@ class UIConstants{
     
     enum Cell:String{
         case MovieTableViewCell = "movieTVC"
-
+        case ContentTableViewCell = "contentTVC"
+        case CharacterCollectionViewCell = "characterCVC"
+        case TitleTableViewCell = "titleTVC"
     }
 }

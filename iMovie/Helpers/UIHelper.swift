@@ -44,6 +44,14 @@ class UIHelper{
         }
     }
     
+    static func circular(view:UIView){
+        view.layer.borderWidth = 0.0
+        view.layer.masksToBounds = false
+        view.layer.borderColor = UIColor.black.cgColor
+        view.layer.cornerRadius = view.frame.height/2
+        view.clipsToBounds = true
+    }
+    
     private static func makeBanner(for error:Error) -> Banner{
         return Banner(title: error.title, subtitle: error.message, backgroundColor: .red)
     }
