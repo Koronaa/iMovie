@@ -19,10 +19,6 @@ class UIHelper{
         return makeViewController(storyBoardName: storyboard.rawValue, viewControllerName: viewControllerName.rawValue) as! T
     }
     
-    static func makeHomeNavigationController() -> UINavigationController{
-        makeViewController(storyBoardName: UIConstants.StoryBoard.Main.rawValue, viewControllerName: UIConstants.StoryBoardID.HomeNC.rawValue) as! UINavigationController
-    }
-    
     static func hide(navigationController controller:UINavigationController?){
         if let navController = controller{
             navController.setNavigationBarHidden(true, animated: true)

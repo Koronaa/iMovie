@@ -11,9 +11,8 @@ class UIConstants{
     
     enum StoryBoardID:String{
         case HomeVC = "homeVC"
-        case HomeNC = "homeNC"
         case MovieInfoVC = "MovieInfoVC"
-        
+        case CharacterInfoVC = "CharacterInfoVC"
     }
     
     enum StoryBoard:String{

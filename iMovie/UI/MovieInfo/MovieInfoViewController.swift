@@ -100,10 +100,10 @@ extension MovieInfoViewController:UITableViewDelegate,UITableViewDataSource{
 extension MovieInfoViewController:CharacterTableViewCellDelegate{
     
     func characterOnTapped() {
-        //TODO:
+        let characterInfoVC = UIHelper.makeViewController(viewControllerName: .CharacterInfoVC) as! CharacterInfoViewController
+        characterInfoVC.characterInfoVM = CharacterInfoViewModel(selectedEndpoint: URL(string: movieInfoVM.selectedCharacterEndpoint!)!)
+        self.navigationController?.pushViewController(characterInfoVC, animated: true)
     }
-    
-    
 }
 
 

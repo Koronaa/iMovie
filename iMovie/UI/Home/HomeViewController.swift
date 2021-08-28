@@ -22,10 +22,14 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        getMovies()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setupTableView()
         setupObservables()
         setupSkeleton()
-        getMovies()
     }
     
     private func setupUI(){

@@ -11,7 +11,7 @@ import RxSwift
 typealias MoviesResponseBlock = (Observable<(MoviesResponse?,Error?)>)->Void
 typealias CharacterResponseBlock = (Observable<(CharacterResponse?,Error?)>)->Void
 
-protocol ModelLayer {
+private protocol ModelLayer {
     func getMovies(onCompleted: @escaping MoviesResponseBlock)
     func getCharacter(for endpoint:URL,onCompleted: @escaping CharacterResponseBlock)
 }

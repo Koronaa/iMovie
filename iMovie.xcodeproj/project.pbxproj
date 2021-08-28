@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A6226FA74EC566532DC00574 /* Pods_iMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6637B9A65C78DDB9428216DE /* Pods_iMovieTests.framework */; };
+		B6681F1F26DA221B00717774 /* CharacterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6681F1E26DA221B00717774 /* CharacterInfoViewController.swift */; };
+		B6681F2126DA232800717774 /* CharacterInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6681F2026DA232800717774 /* CharacterInfoViewModel.swift */; };
 		B6D3AB8426D4F8E600C99813 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3AB8226D4F8E500C99813 /* TitleTableViewCell.swift */; };
 		B6D3AB8526D4F8E600C99813 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D3AB8326D4F8E500C99813 /* TitleTableViewCell.xib */; };
 		B6D3AB8B26D4F9E000C99813 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3AB8926D4F9E000C99813 /* ContentTableViewCell.swift */; };
@@ -69,6 +71,8 @@
 		426FB4CAB6ADC980CE5A7552 /* Pods-iMovie-iMovieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie-iMovieUITests.release.xcconfig"; path = "Target Support Files/Pods-iMovie-iMovieUITests/Pods-iMovie-iMovieUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6637B9A65C78DDB9428216DE /* Pods_iMovieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF7F4E865ABE6FAE8C0C6A5 /* Pods_iMovie_iMovieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovie_iMovieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6681F1E26DA221B00717774 /* CharacterInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoViewController.swift; sourceTree = "<group>"; };
+		B6681F2026DA232800717774 /* CharacterInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoViewModel.swift; sourceTree = "<group>"; };
 		B6D3AB8226D4F8E500C99813 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		B6D3AB8326D4F8E500C99813 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		B6D3AB8926D4F9E000C99813 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
@@ -153,6 +157,15 @@
 				6637B9A65C78DDB9428216DE /* Pods_iMovieTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6681F1D26DA205A00717774 /* CharacterInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B6681F1E26DA221B00717774 /* CharacterInfoViewController.swift */,
+				B6681F2026DA232800717774 /* CharacterInfoViewModel.swift */,
+			);
+			path = CharacterInfo;
 			sourceTree = "<group>";
 		};
 		B6D3AB8626D4F8EB00C99813 /* Title */ = {
@@ -298,6 +311,7 @@
 		B6FBB75D26D21EB7008FA327 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B6681F1D26DA205A00717774 /* CharacterInfo */,
 				B6FBB78826D26725008FA327 /* MovieInfo */,
 				B6FBB77926D22B55008FA327 /* Home */,
 				B6FBB72D26D2184F008FA327 /* Main.storyboard */,
@@ -628,6 +642,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6FBB78126D24802008FA327 /* MovieTableViewCell.swift in Sources */,
+				B6681F1F26DA221B00717774 /* CharacterInfoViewController.swift in Sources */,
 				B6D3AB8E26D4FB1A00C99813 /* CharacterTableViewCell.swift in Sources */,
 				B6FBB76B26D220EA008FA327 /* LogManager.swift in Sources */,
 				B6FBB72C26D2184F008FA327 /* HomeViewController.swift in Sources */,
@@ -646,6 +661,7 @@
 				B6D3AB8426D4F8E600C99813 /* TitleTableViewCell.swift in Sources */,
 				B6FBB78C26D267A3008FA327 /* MovieInfoViewModel.swift in Sources */,
 				B6FBB77826D226DE008FA327 /* ModelLayer.swift in Sources */,
+				B6681F2126DA232800717774 /* CharacterInfoViewModel.swift in Sources */,
 				B6FBB77226D223E1008FA327 /* MoviesReponse.swift in Sources */,
 				B6FBB76D26D2210A008FA327 /* NetworkLayer.swift in Sources */,
 				B6FBB75F26D21F13008FA327 /* UIHelper.swift in Sources */,
