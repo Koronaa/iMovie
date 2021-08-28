@@ -39,9 +39,7 @@ class CharacterInfoViewController: UIViewController {
     }
     
     private func getCharacterInfo(){
-        characterInfoVM.getCharacterInfo {
-            self.stopSkeleton()
-        }
+        characterInfoVM.getCharacterInfo()
     }
     
     private func setupSkeleton(){
@@ -49,8 +47,11 @@ class CharacterInfoViewController: UIViewController {
         nameLabel.showAnimatedGradientSkeleton(usingGradient: gradient, animation: nil, transition: .crossDissolve(0.3))
         birthYearLabel.showAnimatedGradientSkeleton(usingGradient: gradient, animation: nil, transition: .crossDissolve(0.3))
         genderLabel.showAnimatedGradientSkeleton(usingGradient: gradient, animation: nil, transition: .crossDissolve(0.3))
+        nameLabel.showSkeleton()
         nameLabel.startSkeletonAnimation()
+        birthYearLabel.showSkeleton()
         birthYearLabel.startSkeletonAnimation()
+        genderLabel.showSkeleton()
         genderLabel.startSkeletonAnimation()
     }
     
@@ -71,7 +72,13 @@ class CharacterInfoViewController: UIViewController {
         characterInfoVM.gender.asObservable()
             .map{$0}.bind(to: genderLabel.rx.text).disposed(by: bag)
         characterInfoVM.error.asObservable().subscribe(onNext: { error in
-            UIHelper.showBanner(for: error!)
+            if var e = error{
+                UIHelper.showRetryBanner(for: &e) {
+                    self.getCharacterInfo()
+                }.show()
+            }else{
+                self.stopSkeleton()
+            }
         }).disposed(by: bag)
     }
     

@@ -23,10 +23,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         getMovies()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         setupTableView()
         setupObservables()
         setupSkeleton()

@@ -28,17 +28,14 @@ class CharacterInfoViewModel{
     func getCharacterInfo(onComplete: (() -> ())? = nil){
         modelLayer.getCharacter(for: selectedEndpoint) { characterObservable in
             characterObservable.subscribe(onNext: { characterResponse,error in
-                if let e = error{
-                    self.error.onNext(e)
-                }else{
+                if error == nil{
                     self.name.onNext(characterResponse?.name ?? "N/A")
                     self.birthYear.onNext(characterResponse?.birthYear ?? "N/A")
                     self.gender.onNext(characterResponse?.gender.capitalized ?? "N/A")
                 }
+                self.error.onNext(error)
                 onComplete?()
             }).disposed(by: self.bag)
         }
     }
-    
-    
 }
