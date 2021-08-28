@@ -11,8 +11,6 @@ import RxCocoa
 
 class MovieInfoViewModel{
     
-    //TODO:DI
-    
     fileprivate let modelLayer = ModelLayerIMPL(networkLayer: NetworkLayerIMPL(), translationLayer: TranslationLayer())
     fileprivate let bag = DisposeBag()
     
@@ -20,11 +18,13 @@ class MovieInfoViewModel{
     var character = BehaviorRelay<CharacterResponse?>(value: nil)
     var error = BehaviorRelay<Error?>(value: nil)
     
-    var headerTitles:[String?] = [nil,nil,"Director","Producer","Released Date","Characters"]
+    let headerTitles:[String?] = [nil,nil,"Director","Producer","Released Date","Characters"]
     
     init(movie:MovieInfo) {
         self.movie = movie
     }
+    
+    var selectedCharacterEndpoint:URL?
     
     var posterURL:URL{
         return movie.posterURL
@@ -58,22 +58,7 @@ class MovieInfoViewModel{
         return movie.characterEndpoints
     }
     
-    var selectedCharacterEndpoint:String?
-    
-    
-    func getEndpoint(for index:Int) -> URL{
-        return URL(string: chaaracterEndPoints[index])!
-    }
-    
-    func getCharacterInfo(for URL:URL){
-        modelLayer.getCharacter(for: URL) { characterResponseObservable in
-            characterResponseObservable.subscribe(onNext: { characterResponse,error in
-                if let characterInfo = characterResponse{
-                    self.character.accept(characterInfo)
-                }else{
-                    self.error.accept(error)
-                }
-            }).disposed(by: self.bag)
-        }
+    func setSelectedEndpoint(for index:Int){
+        self.selectedCharacterEndpoint =  URL(string: chaaracterEndPoints[index])
     }
 }

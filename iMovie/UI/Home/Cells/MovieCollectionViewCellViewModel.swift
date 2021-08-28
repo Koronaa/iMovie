@@ -15,7 +15,6 @@ class MovieTableViewCellViewModel{
         self.movie = movie
     }
     
-    
     var name:String{
         return movie.title
     }

@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-private protocol NetworkLayer {
+protocol NetworkLayer {
     typealias DataObservable = (_ observable:Observable<(data:Data?,error:Error?)>)->Void
     func getResponseJSON(for url:URL,onCompleted:@escaping DataObservable)
 }

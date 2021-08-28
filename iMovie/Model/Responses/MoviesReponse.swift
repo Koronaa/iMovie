@@ -25,6 +25,15 @@ struct MovieInfo: Codable {
         case releaseDate = "release_date"
         case characterEndpoints = "characters"
     }
+    
+    init(title:String,openingCrawl:String, director:String, producer:String, releaseDate: String,characterEndpoints:[String]) {
+        self.title = title
+        self.openingCrawl = openingCrawl
+        self.director = director
+        self.producer = producer
+        self.releaseDate = releaseDate
+        self.characterEndpoints = characterEndpoints
+    }
 }
 
 

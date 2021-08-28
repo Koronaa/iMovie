@@ -11,15 +11,15 @@ import RxCocoa
 
 class CharacterInfoViewModel{
     
-    //TODO: DI
     fileprivate let modelLayer = ModelLayerIMPL(networkLayer: NetworkLayerIMPL(), translationLayer: TranslationLayer())
     fileprivate let bag = DisposeBag()
-    var selectedEndpoint:URL
-    var error = PublishSubject<Error?>()
     
-    var name = PublishSubject<String>()
-    var gender = PublishSubject<String>()
-    var birthYear = PublishSubject<String>()
+    var selectedEndpoint:URL
+    
+    var error = PublishSubject<Error?>()
+    var name = PublishSubject<String?>()
+    var gender = PublishSubject<String?>()
+    var birthYear = PublishSubject<String?>()
     
     init(selectedEndpoint:URL) {
         self.selectedEndpoint = selectedEndpoint

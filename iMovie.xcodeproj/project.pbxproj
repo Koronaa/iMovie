@@ -10,6 +10,9 @@
 		A6226FA74EC566532DC00574 /* Pods_iMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6637B9A65C78DDB9428216DE /* Pods_iMovieTests.framework */; };
 		B6681F1F26DA221B00717774 /* CharacterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6681F1E26DA221B00717774 /* CharacterInfoViewController.swift */; };
 		B6681F2126DA232800717774 /* CharacterInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6681F2026DA232800717774 /* CharacterInfoViewModel.swift */; };
+		B6681F2726DA6C6600717774 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6681F2626DA6C6600717774 /* HomeViewModelTests.swift */; };
+		B6681F2926DA6F0900717774 /* MovieInfoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6681F2826DA6F0900717774 /* MovieInfoViewModelTests.swift */; };
+		B6681F2B26DA77AC00717774 /* CharacterInfoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6681F2A26DA77AC00717774 /* CharacterInfoViewModelTests.swift */; };
 		B6D3AB8426D4F8E600C99813 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3AB8226D4F8E500C99813 /* TitleTableViewCell.swift */; };
 		B6D3AB8526D4F8E600C99813 /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D3AB8326D4F8E500C99813 /* TitleTableViewCell.xib */; };
 		B6D3AB8B26D4F9E000C99813 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3AB8926D4F9E000C99813 /* ContentTableViewCell.swift */; };
@@ -26,7 +29,6 @@
 		B6FBB75F26D21F13008FA327 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB75E26D21F13008FA327 /* UIHelper.swift */; };
 		B6FBB76226D21F39008FA327 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB76126D21F39008FA327 /* UIConstants.swift */; };
 		B6FBB76426D22002008FA327 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB76326D22002008FA327 /* Error.swift */; };
-		B6FBB76626D22090008FA327 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB76526D22090008FA327 /* ReachabilityManager.swift */; };
 		B6FBB76826D220AB008FA327 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB76726D220AB008FA327 /* ServiceManager.swift */; };
 		B6FBB76B26D220EA008FA327 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB76A26D220EA008FA327 /* LogManager.swift */; };
 		B6FBB76D26D2210A008FA327 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB76C26D2210A008FA327 /* NetworkLayer.swift */; };
@@ -73,6 +75,9 @@
 		8DF7F4E865ABE6FAE8C0C6A5 /* Pods_iMovie_iMovieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovie_iMovieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6681F1E26DA221B00717774 /* CharacterInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoViewController.swift; sourceTree = "<group>"; };
 		B6681F2026DA232800717774 /* CharacterInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoViewModel.swift; sourceTree = "<group>"; };
+		B6681F2626DA6C6600717774 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		B6681F2826DA6F0900717774 /* MovieInfoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoViewModelTests.swift; sourceTree = "<group>"; };
+		B6681F2A26DA77AC00717774 /* CharacterInfoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoViewModelTests.swift; sourceTree = "<group>"; };
 		B6D3AB8226D4F8E500C99813 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		B6D3AB8326D4F8E500C99813 /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		B6D3AB8926D4F9E000C99813 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
@@ -95,7 +100,6 @@
 		B6FBB75E26D21F13008FA327 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		B6FBB76126D21F39008FA327 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		B6FBB76326D22002008FA327 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		B6FBB76526D22090008FA327 /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		B6FBB76726D220AB008FA327 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		B6FBB76A26D220EA008FA327 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		B6FBB76C26D2210A008FA327 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
@@ -239,6 +243,9 @@
 			children = (
 				B6FBB74026D21850008FA327 /* Info.plist */,
 				B6FBB77C26D22BBD008FA327 /* WebServiceTests.swift */,
+				B6681F2626DA6C6600717774 /* HomeViewModelTests.swift */,
+				B6681F2826DA6F0900717774 /* MovieInfoViewModelTests.swift */,
+				B6681F2A26DA77AC00717774 /* CharacterInfoViewModelTests.swift */,
 			);
 			path = iMovieTests;
 			sourceTree = "<group>";
@@ -274,7 +281,6 @@
 		B6FBB75926D21E94008FA327 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				B6FBB76526D22090008FA327 /* ReachabilityManager.swift */,
 				B6FBB76726D220AB008FA327 /* ServiceManager.swift */,
 				B6FBB76C26D2210A008FA327 /* NetworkLayer.swift */,
 			);
@@ -649,7 +655,6 @@
 				B6FBB72826D2184F008FA327 /* AppDelegate.swift in Sources */,
 				B6FBB78426D24A61008FA327 /* MovieCollectionViewCellViewModel.swift in Sources */,
 				B6FBB77B26D22B60008FA327 /* HomeViewModel.swift in Sources */,
-				B6FBB76626D22090008FA327 /* ReachabilityManager.swift in Sources */,
 				B6FBB76826D220AB008FA327 /* ServiceManager.swift in Sources */,
 				B6FBB77626D225A1008FA327 /* TranslationLayer.swift in Sources */,
 				B6FBB76226D21F39008FA327 /* UIConstants.swift in Sources */,
@@ -676,7 +681,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6681F2B26DA77AC00717774 /* CharacterInfoViewModelTests.swift in Sources */,
 				B6FBB77D26D22BBD008FA327 /* WebServiceTests.swift in Sources */,
+				B6681F2926DA6F0900717774 /* MovieInfoViewModelTests.swift in Sources */,
+				B6681F2726DA6C6600717774 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

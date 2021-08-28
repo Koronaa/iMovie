@@ -11,7 +11,6 @@ import RxCocoa
 
 class HomeViewModel{
     
-    //TODO:DI
     fileprivate let modelLayer = ModelLayerIMPL(networkLayer: NetworkLayerIMPL(), translationLayer: TranslationLayer())
     fileprivate let bag = DisposeBag()
     
@@ -19,7 +18,7 @@ class HomeViewModel{
     var error = BehaviorRelay<Error?>(value: nil)
     
     
-    func getMovies(){
+    func getMovies(onComplete: (() -> ())? = nil){
         modelLayer.getMovies { movieResponseObservable in
             movieResponseObservable.subscribe(onNext: { movieResponse,error in
                 if let movies = movieResponse?.results{
@@ -27,6 +26,7 @@ class HomeViewModel{
                 }else{
                     self.error.accept(error)
                 }
+                onComplete?()
             }).disposed(by: self.bag)
         }
     }

@@ -61,8 +61,8 @@ class CharacterTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        movieInfoVM.selectedCharacterEndpoint = movieInfoVM.chaaracterEndPoints[indexPath.row]
-        Log("Tapped endpoint: \(movieInfoVM.selectedCharacterEndpoint)")
+        movieInfoVM.setSelectedEndpoint(for: indexPath.row)
+        Log("Tapped endpoint: \(movieInfoVM.selectedCharacterEndpoint?.absoluteString ?? "N/A")")
         delegate.characterOnTapped()
     }
 }
